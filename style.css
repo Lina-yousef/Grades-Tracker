@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+header{
+    background: black;
+    color: white;
+    text-align: center;
+    /* font-weight: 500; */
+    font-size: 2rem;
+    width: 100%;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+main{
+    background-image:url('school.jpg');
+    background-repeat: no-repeat;
+    widows: 100%;
+    height: 600px;
+    top: 0;
+    background-size: 100% 100%;
+
+}
+
+form {
+    background: rgba(152, 152, 253, 0.6);
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    top: 50%;
+}
+
+#submit{
+    color: white;
+    background: black;
+}
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+     background: rgba(152, 152, 253, 0.6);
+     top: 40%;
+     right: 20%; 
+
+    
+}
+td,
+tr {
+    color: white;
+    border: solid 3PX;
+    padding: 0.5rem;
+}
