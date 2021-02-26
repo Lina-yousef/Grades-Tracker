@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 header{
+    position: absolute;
+
     background: black;
     color: white;
     text-align: center;
@@ -14,22 +16,22 @@ header{
 main{
     background-image:url('school.jpg');
     background-repeat: no-repeat;
-    widows: 100%;
+    width: 100%;
     height: 600px;
     top: 0;
     background-size: 100% 100%;
-
 }
 
 form {
-    background: rgba(152, 152, 253, 0.6);
+    position: absolute;
+    background: rgba(139, 114, 197, 0.781);
     width: 200px;
     height: 150px;
-    margin: 50px;
+    margin: 50px ;
     padding: 30px;
     text-align: center;
     color: white;
-    top: 50%;
+    top: 30%;
 }
 
 #submit{
@@ -38,18 +40,23 @@ form {
 }
 
 table {
-    border: 1px solid white;
+    position: absolute;
+    border: 1px solid  ;
     border-collapse: collapse;
-    color: white;
-     background: rgba(152, 152, 253, 0.6);
-     top: 40%;
-     right: 20%; 
-
-    
+    padding: 0.5rem;
+    width: 500px;
+    /* color: white; */
+    /* background : rgba(134, 110, 190, 0.822); */
+    top: 40%;
+    left: 50%;  
+}
+th{    background: rgb(17, 17, 17);
 }
 td,
 tr {
+    border-collapse: collapse;
     color: white;
     border: solid 3PX;
     padding: 0.5rem;
+    background: rgb(39, 39, 39);
 }

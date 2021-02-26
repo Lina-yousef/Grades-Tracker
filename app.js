@@ -9,7 +9,7 @@ Grades.prototype.allStudent.push(this);
 }
 
 function randomGrade (){
-    return Math.floor(Math.random() * (100 -0) +0 );
+    return Math.floor(Math.random() * (100 ) );
 }
 
 Grades.prototype.allStudent = [];
@@ -35,7 +35,7 @@ var grade = Grades.prototype.allStudent;
 new Grades (studentNameValue , courseValue );
 console.log(Grades.prototype.allStudent);
 console.log(table);
-form.innerHTML ='';
+table.innerHTML ='';
 createHeader ();
 createStudent();
 
@@ -48,12 +48,12 @@ function createHeader (){
     table.appendChild(headerRow);
 
     var studentName =document.createElement('th');
-    headerRow.appendChild(studentName);
     studentName.textContent = 'Student Name';
+    headerRow.appendChild(studentName);
 
     var grade =document.createElement('th');
-    headerRow.appendChild(grade);
     grade.textContent = 'Student Grade';
+    headerRow.appendChild(grade);
 
     var course =document.createElement('th');
     headerRow.appendChild(course);
@@ -62,20 +62,21 @@ function createHeader (){
 }
 
 function createStudent(){
-
+for(var i=0 ; i<Grades.prototype.allStudent.length ; i++){
 var studemtData = document.createElement('tr');
 table.appendChild(studemtData);
 
  var studentName =document.createElement('td');
     studemtData.appendChild(studentName);
-    studentName.textContent = Grades.prototype.allStudent.studentName; 
+    studentName.textContent = Grades.prototype.allStudent[i].studentName; 
 
     var grade =document.createElement('td');
     studemtData.appendChild(grade);
-    grade.textContent = Grades.prototype.allStudent.grade;
+    grade.textContent = Grades.prototype.allStudent[i].grade;
 
     var course =document.createElement('td');
     studemtData.appendChild(course);
-    course.textContent = Grades.prototype.allStudent.course;
+    course.textContent = Grades.prototype.allStudent[i].course;
+}
 }
 
